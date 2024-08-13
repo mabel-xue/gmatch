@@ -1,6 +1,6 @@
 <template>
   <v-container class="fill-height">
-    <v-row align="center" justify="center">
+    <!-- <v-row align="center" justify="center">
       <v-col cols="12" sm="8" md="6" lg="4">
         <v-card>
           <v-card-title class="text-center">
@@ -34,18 +34,18 @@
           </v-card-text>
         </v-card>
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
 <script setup lang="ts">
-const prevHint = () => {
-  this.currentIndex = Math.max(this.currentIndex - 1, 0);
-}
-const nextHint = () => {
-  this.currentIndex = Math.min(this.currentIndex + 1, this.hints.length - 1);
-}
-const resetGame = () => {
-  this.currentIndex = 0;
-}
+// const prevHint = () => {
+//   this.currentIndex = Math.max(this.currentIndex - 1, 0);
+// };
+// const nextHint = () => {
+//   this.currentIndex = Math.min(this.currentIndex + 1, this.hints.length - 1);
+// };
+// const resetGame = () => {
+//   this.currentIndex = 0;
+// };
 </script>
