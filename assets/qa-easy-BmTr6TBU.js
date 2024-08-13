@@ -1,0 +1,1 @@
+import{a2 as n,a3 as a}from"./index-BY-dl8pH.js";const s=(t,e)=>{const c=t.__vccOpts||t;for(const[o,r]of e)c[o]=r;return c},_={};function f(t,e){return n(),a("div")}const p=s(_,[["render",f]]);export{p as default};
