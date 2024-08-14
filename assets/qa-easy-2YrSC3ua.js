@@ -1,1 +1,0 @@
-import{_ as o,a}from"./data-Cl2x66S3.js";import{d as n,f as s,g as t,o as r}from"./index-vWjfio-6.js";import"./VBtn-XnIhcefw.js";const l=n({__name:"qa-easy",setup(_){return(m,c)=>{const e=o;return r(),s(e,{items:t(a),random:""},null,8,["items"])}}});export{l as default};
