@@ -2,21 +2,21 @@
   <v-container class="fill-height">
     <v-row class="fill-height" align="center" justify="center">
       <v-col class="fill-height d-flex flex-column">
-        <v-row class="flex-grow-1" align="center" justify="center">
+        <div style="height: calc(100vh - 50px)" class="d-flex justify-center align-center">
           <h1 :style="{ fontSize: random ? '50px' : '120px' }">{{ currentHint }}</h1>
-        </v-row>
+        </div>
 
         <div>
           <v-row justify="space-between">
             <template v-if="random">
-              <v-btn color="primary" @click="handleRandom"> 随机 </v-btn>
-              <v-btn color="primary" @click="handleStopRandom"> 停 </v-btn>
+              <v-btn style="width: 160px" color="primary" @click="handleRandom" :disabled="!!timer"> 随机 </v-btn>
+              <v-btn style="width: 160px" color="primary" @click="handleStopRandom" :disabled="!timer"> 停 </v-btn>
             </template>
             <template v-else>
-              <v-btn color="primary" @click="prevHint" :disabled="currentIndex === 0">
+              <v-btn style="width: 160px"  color="primary" @click="prevHint" :disabled="currentIndex === 0">
                 上一个
               </v-btn>
-              <v-btn
+              <v-btn style="width: 160px"
                 color="primary"
                 @click="nextHint"
                 :disabled="currentIndex === items.length - 1"
@@ -61,6 +61,7 @@ const handleRandom = () => {
 };
 const handleStopRandom = () => {
   clearInterval(timer.value);
+  timer.value = null
 };
 const resetGame = () => {
   router.push("/");
