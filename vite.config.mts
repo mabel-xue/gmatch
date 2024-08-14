@@ -4,6 +4,7 @@ import Vue from "@vitejs/plugin-vue";
 import Vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 import ViteFonts from "unplugin-fonts/vite";
 import VueRouter from "unplugin-vue-router/vite";
+import AutoImport from "unplugin-auto-import/vite";
 
 // Utilities
 import { defineConfig } from "vite";
@@ -33,6 +34,13 @@ export default defineConfig({
             styles: "wght@100;300;400;500;700;900",
           },
         ],
+      },
+    }),
+    AutoImport({
+      imports: ["vue", "vue-router"],
+      dts: true,
+      eslintrc: {
+        enabled: true, // <-- this
       },
     }),
   ],

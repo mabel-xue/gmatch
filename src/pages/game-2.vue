@@ -1,9 +1,9 @@
 <template>
-  <ScrollView :items="QA_EASY" random />
+  <ScrollView :items="damaoxian" random />
 </template>
 
 <script setup lang="ts">
-import { QA_EASY } from "@/data";
+import { damaoxian } from "@/data";
 </script>
 
 <style scoped></style>

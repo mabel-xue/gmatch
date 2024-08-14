@@ -12,10 +12,10 @@
 <script lang="ts" setup>
 const router = useRouter();
 const buttons = [
-  { text: "QA1", path: "/qa-easy" },
-  { text: "QA2", path: "/qa-2" },
-  { text: "game1", path: "/game" },
-  { text: "game2", path: "/game-2" },
+  { text: "成语", path: "/game-view?id=1" },
+  { text: "动物", path: "/game-view?id=2" },
+  { text: "物品", path: "/game-view?id=3" },
+  { text: "食物", path: "/game-view?id=4" },
 ];
 
 const navigateToPage = (path: any) => {
