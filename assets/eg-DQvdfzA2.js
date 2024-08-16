@@ -1,1 +1,0 @@
-import{_ as o,E as t}from"./data-DLn2uHu2.js";import{d as n,e as s,f as r,o as a}from"./index-2Ccvgtjf.js";import"./VBtn-I6JAJW9y.js";const l=n({__name:"eg",setup(_){return(c,m)=>{const e=o;return a(),s(e,{items:r(t)},null,8,["items"])}}});export{l as default};
