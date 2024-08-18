@@ -1,1 +1,0 @@
-import{_ as o,E as t}from"./data-CaVKbinP.js";import{d as n,e as s,f as r,o as a}from"./index-h19F2h25.js";import"./VBtn-CFmGIYI2.js";const l=n({__name:"eg",setup(_){return(c,m)=>{const e=o;return a(),s(e,{items:r(t)},null,8,["items"])}}});export{l as default};

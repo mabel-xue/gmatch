@@ -1,1 +1,0 @@
-import{_ as o,d as a}from"./data-CaVKbinP.js";import{d as n,e as t,f as m,o as r}from"./index-h19F2h25.js";import"./VBtn-CFmGIYI2.js";const l=n({__name:"game-2",setup(s){return(_,c)=>{const e=o;return r(),t(e,{items:m(a),random:""},null,8,["items"])}}});export{l as default};
