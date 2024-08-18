@@ -2,7 +2,7 @@
   <v-container class="fill-height">
     <v-row class="fill-height" align="center" justify="center">
       <v-col class="fill-height d-flex flex-column">
-        <div style="height: calc(100vh - 50px)" class="d-flex justify-center align-center">
+        <div style="height: calc(100vh - 120px)" class="d-flex justify-center align-center">
           <h1 :style="{ fontSize: random ? '50px' : '120px' }">{{ currentHint }}</h1>
         </div>
 
