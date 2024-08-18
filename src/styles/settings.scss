@@ -8,3 +8,7 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+
+.v-btn+.v-btn{
+  margin-left: 10px;
+}
