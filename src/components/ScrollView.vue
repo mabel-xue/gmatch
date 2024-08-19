@@ -80,7 +80,7 @@ const nextHint = () => {
 const handleRandom = () => {
   timer.value = setInterval(() => {
     currentIndex.value = Math.floor(Math.random() * props.items.length);
-  }, 80);
+  }, 70);
 };
 const handleStopRandom = () => {
   clearInterval(timer.value);

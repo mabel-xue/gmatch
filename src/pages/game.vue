@@ -16,6 +16,7 @@ const buttons = [
   { text: "动物", path: "/game-view?id=2" },
   { text: "物品", path: "/game-view?id=3" },
   { text: "食物", path: "/game-view?id=4" },
+  { text: "人物", path: "/game-view?id=5" },
 ];
 
 const navigateToPage = (path: any) => {
