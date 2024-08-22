@@ -1,1 +1,0 @@
-import{_ as s,n as a}from"./data-C8n050s2.js";import{d as r,g as c,e as m,f as _,h as i,o as u}from"./index-Cr5yPUn6.js";import"./VBtn-CNsSp9BJ.js";const g=r({__name:"game-view",setup(p){const t=i(),o=c(()=>{const e=t.query.id;return a[e]});return(e,d)=>{const n=s;return u(),m(n,{items:_(o)},null,8,["items"])}}});export{g as default};
