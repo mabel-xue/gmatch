@@ -3,7 +3,7 @@
     <v-row class="fill-height" align="center" justify="center">
       <v-col class="fill-height d-flex flex-column">
         <div
-          style="height: calc(100vh - 50px)"
+          style="height: calc(100vh - 100px)"
           class="d-flex justify-center align-center"
         >
           <h1 :style="{ fontSize: random ? '50px' : '120px' }">{{ currentHint }}</h1>
@@ -13,6 +13,7 @@
           <v-row>
             <template v-if="random">
               <v-btn
+                prepend-icon="mdi-play"
                 v-if="!timer"
                 style="width: 160px"
                 color="primary"
@@ -21,6 +22,7 @@
                 随机
               </v-btn>
               <v-btn
+                prepend-icon="mdi-stop"
                 v-if="!!timer"
                 style="width: 160px"
                 color="primary"
@@ -31,6 +33,7 @@
             </template>
             <template v-else>
               <v-btn
+                prepend-icon="mdi-skip-previous"
                 style="width: 160px"
                 color="primary"
                 @click="prevHint"
@@ -39,6 +42,7 @@
                 上一个
               </v-btn>
               <v-btn
+                prepend-icon="mdi-skip-next"
                 style="width: 160px"
                 color="primary"
                 @click="nextHint"
@@ -47,7 +51,7 @@
                 下一个
               </v-btn>
             </template>
-            <v-btn color="primary" @click="resetGame"> Home </v-btn>
+            <v-btn color="primary" @click="resetGame"> 返回 </v-btn>
           </v-row>
         </div>
       </v-col>
@@ -66,8 +70,8 @@ const props = defineProps({
     default: false,
   },
 });
-const currentIndex = ref(0);
-const currentHint = computed(() => props.items[currentIndex.value]);
+const currentIndex = ref(-1);
+const currentHint = computed(() => props.items?.[currentIndex.value] || "-");
 const router = useRouter();
 const timer = ref();
 

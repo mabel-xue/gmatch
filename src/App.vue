@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main class="pa-2">
+    <v-main class="pa-3">
       <router-view />
     </v-main>
   </v-app>

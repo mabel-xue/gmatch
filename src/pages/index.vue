@@ -1,6 +1,7 @@
 <template>
   <v-btn
     size="x-large"
+    color="primary"
     v-for="btn in buttons"
     :key="btn.text"
     @click="navigateToPage(btn.path)"
