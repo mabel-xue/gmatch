@@ -33,6 +33,7 @@
           >
             下一个
           </v-btn>
+          <v-btn color="primary" @click="resetGame"> 返回 </v-btn>
         </v-row>
       </v-col>
     </v-row>
@@ -40,6 +41,7 @@
 </template>
 
 <script lang="ts" setup>
+const router = useRouter();
 const currentIndex = ref(-1);
 const randomNums = ref([
   [0, 0],
@@ -102,4 +104,8 @@ const next = () => {
 onMounted(() => {
   next();
 });
+
+const resetGame = () => {
+  router.push("/");
+};
 </script>
