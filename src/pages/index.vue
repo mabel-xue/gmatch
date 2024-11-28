@@ -13,8 +13,8 @@
 <script lang="ts" setup>
 const router = useRouter();
 const buttons = [
-  { text: "QA1", path: "/qa-easy" },
-  { text: "QA2", path: "/qa-2" },
+  // { text: "QA1", path: "/qa-easy" },
+  { text: "QA", path: "/qa-2" },
   { text: "G", path: "/game" },
   { text: "H", path: "/hot" },
   // { text: "M", path: "/match" },

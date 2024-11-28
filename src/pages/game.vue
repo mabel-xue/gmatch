@@ -19,6 +19,7 @@ const buttons = [
   { text: "物品", path: "/game-view?id=3", icon: "mdi-paper-roll-outline" },
   { text: "食物", path: "/game-view?id=4", icon: "mdi-fruit-cherries" },
   { text: "人物", path: "/game-view?id=5", icon: "mdi-alien-outline" },
+  { text: "电影", path: "/game-view?id=6", icon: "mdi-movie-roll" },
 ];
 
 const navigateToPage = (path: any) => {

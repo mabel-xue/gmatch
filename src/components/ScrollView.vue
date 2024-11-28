@@ -1,7 +1,7 @@
 <template>
-  <v-container class="fill-height">
-    <v-row class="fill-height" align="center" justify="center">
-      <v-col class="fill-height d-flex flex-column">
+  <v-container class="">
+    <v-row class="" align="center" justify="center">
+      <v-col class="d-flex flex-column">
         <div
           style="height: calc(100vh - 160px)"
           class="d-flex justify-center align-center"
@@ -13,6 +13,7 @@
           <v-row>
             <template v-if="random">
               <v-btn
+                size="x-large"
                 prepend-icon="mdi-play"
                 v-if="!timer"
                 style="width: 160px"
@@ -22,6 +23,7 @@
                 随机
               </v-btn>
               <v-btn
+                size="x-large"
                 prepend-icon="mdi-stop"
                 v-if="!!timer"
                 style="width: 160px"
@@ -33,6 +35,7 @@
             </template>
             <template v-else>
               <v-btn
+                size="x-large"
                 prepend-icon="mdi-skip-previous"
                 style="width: 160px"
                 color="primary"
@@ -42,6 +45,7 @@
                 上一个
               </v-btn>
               <v-btn
+                size="x-large"
                 prepend-icon="mdi-skip-next"
                 style="width: 160px"
                 color="primary"
@@ -51,7 +55,7 @@
                 下一个
               </v-btn>
             </template>
-            <v-btn color="primary" @click="resetGame"> 返回 </v-btn>
+            <v-btn color="primary" @click="resetGame" size="x-large"> 返回 </v-btn>
           </v-row>
         </div>
       </v-col>
@@ -70,6 +74,7 @@ const props = defineProps({
     default: false,
   },
 });
+const emit = defineEmits(["start"]);
 const currentIndex = ref(-1);
 const currentHint = computed(() => props.items?.[currentIndex.value] || "-");
 const router = useRouter();
@@ -80,6 +85,7 @@ const prevHint = () => {
 };
 const nextHint = () => {
   currentIndex.value = Math.min(currentIndex.value + 1, props.items.length - 1);
+  emit("start");
 };
 const handleRandom = () => {
   timer.value = setInterval(() => {
