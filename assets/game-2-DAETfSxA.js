@@ -1,0 +1,1 @@
+import{_ as e,d as a}from"./data-BcRMJv9e.js";import{d as n,e as t,f as m,o as r}from"./index-xYx00aZs.js";import"./VRow-B0aimlMf.js";import"./VBtn-BkUJ7Tih.js";const d=n({__name:"game-2",setup(s){return(_,c)=>{const o=e;return r(),t(o,{items:m(a),random:""},null,8,["items"])}}});export{d as default};
