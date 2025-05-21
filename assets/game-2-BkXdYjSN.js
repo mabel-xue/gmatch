@@ -1,0 +1,1 @@
+import{_ as e}from"./ScrollView.vue_vue_type_script_setup_true_lang-BuklSNv5.js";import{d as a}from"./data-CVwoIGyr.js";import{d as m,e as r,f as t,o as n}from"./index-BdB6UBMb.js";import"./VRow-1ZVompOf.js";import"./VBtn-DMXcREEB.js";const u=m({__name:"game-2",setup(s){return(_,c)=>{const o=e;return n(),r(o,{items:t(a),random:""},null,8,["items"])}}});export{u as default};

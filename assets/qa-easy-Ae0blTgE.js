@@ -1,0 +1,1 @@
+import{_ as e}from"./ScrollView.vue_vue_type_script_setup_true_lang-BuklSNv5.js";import{a as r}from"./data-CVwoIGyr.js";import{d as t,e as a,f as m,o as n}from"./index-BdB6UBMb.js";import"./VRow-1ZVompOf.js";import"./VBtn-DMXcREEB.js";const d=t({__name:"qa-easy",setup(s){return(_,c)=>{const o=e;return n(),a(o,{items:m(r),random:""},null,8,["items"])}}});export{d as default};
