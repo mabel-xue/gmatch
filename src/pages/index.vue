@@ -17,6 +17,7 @@ const buttons = [
   { text: "QA", path: "/qa-2" },
   { text: "G", path: "/game" },
   { text: "H", path: "/hot" },
+  { text: "QA_view", path: "/qa-view" },
   // { text: "M", path: "/match" },
   // { text: "game2", path: "/game-2" },
 ];

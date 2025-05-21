@@ -26,5 +26,6 @@ declare module 'vue-router/auto-routes' {
     '/match': RouteRecordInfo<'/match', '/match', Record<never, never>, Record<never, never>>,
     '/qa-2': RouteRecordInfo<'/qa-2', '/qa-2', Record<never, never>, Record<never, never>>,
     '/qa-easy': RouteRecordInfo<'/qa-easy', '/qa-easy', Record<never, never>, Record<never, never>>,
+    '/qa-view': RouteRecordInfo<'/qa-view', '/qa-view', Record<never, never>, Record<never, never>>,
   }
 }
